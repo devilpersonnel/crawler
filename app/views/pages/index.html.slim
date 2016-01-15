@@ -1,0 +1,15 @@
+h1 List of all pages
+
+table.table-bordered
+  thead
+    tr
+      th Page title
+      th Page link
+      th Action
+  tbody
+    - @pages.each do |page|
+      tr
+        td = page.page_name
+        td = page.link
+        td = link_to "Show", page
+
